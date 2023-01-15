@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import ListOfSpaceXLaunches from "./components/molecules/ListOfSpaceXLaunches";
 
 function App() {
   const [spacexData, setSpacexData] = useState([]);
@@ -16,7 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <p>{JSON.stringify(spacexData)}</p>
+      <h1>SpaceX Launch Information</h1>
+      {spacexData.length > 0 && (
+        <ListOfSpaceXLaunches spacexData={spacexData} />
+      )}
     </div>
   );
 }
