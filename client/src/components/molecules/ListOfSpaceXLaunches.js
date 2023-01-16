@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import LaunchCard from "../atoms/LaunchCard.js";
 
 const ListOfSpaceXLaunches = ({ spacexData }) => {
-  const upcomingLaunches = spacexData.filter((launch) => launch.upcoming === true);
+  const upcomingLaunches = spacexData.filter(
+    (launch) => new Date(launchl.date_local) > new Date()
+  );
 
   return (
     <>
