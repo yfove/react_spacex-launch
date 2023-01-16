@@ -8,7 +8,7 @@ const ListOfSpaceXLaunches = ({ spacexData }) => {
     <>
       {upcomingLaunches.length > 0 &&
         upcomingLaunches.map((data) => (
-          <LaunchCard launchData={data} key={data.flight_numbers} />
+          <LaunchCard launchData={data} key={data.flight_number} />
         ))}
     </>
   );

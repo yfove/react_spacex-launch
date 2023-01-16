@@ -18,9 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1>SpaceX Launch Information</h1>
-      {spacexData.length > 0 && (
-        <ListOfSpaceXLaunches spacexData={spacexData} />
-      )}
+      {spacexData.length > 0 && <ListOfSpaceXLaunches spacexData={spacexData} />}
     </div>
   );
 }
